@@ -100,7 +100,7 @@ PR_table_importingcountries = PR_table{:,1:2};
 temp = PR_table{:,end};
 PR_table_importingamount = [temp(3); temp(4); temp(1); temp(2)+temp(5)]*1e-6;
 
-chip_table =readtable('/Users/hj/Documents/GitHub/JapanKoreaTradeConflict/build/input/dram_exports_all.xlsx');
+chip_table =readtable('/Users/hj/Documents/GitHub/JapanKoreaTradeConflict/build/input/chip_trade_all.xlsx');
 chip_korea_export = chip_table{1:51,end};
 chip_us_export = chip_table{52:end,end};
 
@@ -110,6 +110,14 @@ us_idx_other = (1:length(chip_us_export))';
 us_idx_other([70 115 132]) = [];
 chip_korea_export = [chip_korea_export([38 51 15]); sum(chip_korea_export(korea_idx_other)) ]*1e-6;
 chip_us_export = [chip_us_export([70 115 132]); sum(chip_us_export(us_idx_other))]*1e-6;
+
+char_vec = {('도보로 이동 가능한 거리');('차로 30분 이상 1시간 이내 거리');...
+    ('차로 1시간 이상 2시간 이내 거리'); ('차로 2시간 이상 거리')};
+for i=1:size(char_vec,1)
+    char = char_vec{i,:};
+    idx = strcmp(dist,char);
+    dist(idx) = {num2str(i-1)};
+end
 
 % Sector specific trade
 Z_aug(2,:,6,4) = PR_table_importingamount;

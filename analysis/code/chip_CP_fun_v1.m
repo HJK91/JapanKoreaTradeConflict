@@ -1,4 +1,4 @@
- function z = chip_CP_fun_v1(par,WIOD)
+ function z = chip_CP_fun_v1(par, par_fixed,WIOD)
 
 % Let's extend Caliendo and Parro (2015) to incorporate chip market
 % environment. To consider the GVC through chip industry, consider S+3
@@ -12,9 +12,9 @@
 
 clc
 clear
-S = Par.S;      % Number of industries
+S = par.S;      % Number of industries
 S = S+2;    % Accommodate H-chips and PR sectors.
-J = Par.J;      % Number of countries
+J = par.J;      % Number of countries
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Parameters %%%%%%%%%%%%%%%
@@ -37,7 +37,7 @@ J = Par.J;      % Number of countries
 
 options     = optimoptions('fsolve','Display','iter');
 w_0 = randn(J,1);
-w_sol   = fsolve(@(w) mktclearing(w,par,S,J,L_0,D_0), w_0, options);
+w_sol   = fsolve(@(w) mktclearing(w,par_fixed,S,J,L_0,D_0), w_0, options);
     % Solve for equilibrium wage, using trade balance condition
 solution.w = exp(w_sol(:,1))./exp(w_sol(1,1)); % Save the result in structure 'solution'
 % Given the solution, obtain (c, P, pi, X) using while loop.
@@ -45,20 +45,20 @@ cP_prev     = [randn(S*J,1); randn(S*J,1)]; % This vector is converted to exp(cP
 gap         = 1;
 tol         = 1e-8;
 while gap>tol
-    cP_new      = log(cPeq(solution.w(:,1),cP_prev,par,S,J));
+    cP_new      = log(cPeq(solution.w(:,1),cP_prev,par_fixed,S,J));
     gap         = norm(exp(cP_prev)-exp(cP_new));
     cP_prev     = cP_new;
 end
 solution.c  = exp(cP_new(1:S*J));
 solution.P  = exp(cP_new(S*J+1:end));
 % Using solution.c, obtain the bilateral trade shares.
-solution.pi = pieq(cP_prev,par,S,J);
+solution.pi = pieq(cP_prev,par_fixed,S,J);
 % Finally, using market clearing conditions compute expenditure X.
 gap         = 1;
 X_prev      = exp(randn(S*J,1));
 while gap > 1e-8
     Y_prev  = sum(reshape(lastidx(X_prev,S,J,J).*solution.pi,J,J,S),2);
-    X_new   = Xeq(solution.w,solution.P,Y_prev,par,S,J,L_0,D_0);
+    X_new   = Xeq(solution.w,solution.P,Y_prev,par_fixed,S,J,L_0,D_0);
     gap     = norm(X_prev-X_new);
     X_prev  = X_new;
 end
@@ -74,9 +74,21 @@ WIOD_Z = WIOD(1:S^2*J^2);
 WIOD_F = WIOD(S^2*J^2+1:S^2*J^2+J^2+S);
 WIOD_Y = WIOD(S^2*J^2+J^2+S+1:S^2*J^2+J^2+S+S*J);
 WIOD_VA = WIOD(S^2*J^2+J^2+S*J:S^2*J^2+J^2+S+2*S*J);
+% M = squeeze(sum(reshape(WIOD_Z,J,J,S,S),3));
+% WIOD_X = squeeze(sum(M.*reshape(par.tau,J,J,S),1));
+% gap_pi  = norm(reshape(solution.pi-WIOD_X./sum(WIOD_X),J^2*S,1));
+model_Y = sum(reshape(lastidx(solution.X,S,J,J).*solution.pi,J,J,S),2);
+temp  = reshape(mididx(model_Y(:),S,S,J),J,S,S);
+Y_gamma = sum(temp(:,:,1:end-2).*par_fixed.mygamma(:,:,1:end-2),3);
+Y_gamma = reshape(Y_gamma(:),J,S);
+model_F = solution.X-Y_gamma;
+temp1 = reshape(lastidx(model_Y-model_F,S,J,J),J,J,S).*solution.pi;
+temp1 = mididx(temp1,J^2,S,S);
+temp2 = lastidx(par_fixed.mygamma,J,J,S^2);
+model_Z = reshape(temp1.*temp2,J,J,S,S);
+model_VA= model_Y-squeeze(sum(model_Z,[1,3]));
 
-gap_Z = X_
-
+z=norm([WIOD_Z-model_Z(:); WIOD_F-model_F(:);WIOD_Y-model_Y; WIOD_VA-model_VA]);
 
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

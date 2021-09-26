@@ -1,0 +1,83 @@
+Classification,Year,Period,Period Desc.,Aggregate Level,Is Leaf Code,Trade Flow Code,Trade Flow,Reporter Code,Reporter,Reporter ISO,Partner Code,Partner,Partner ISO,2nd Partner Code,2nd Partner,2nd Partner ISO,Customs Proc. Code,Customs,Mode of Transport Code,Mode of Transport,Commodity Code,Commodity,Qty Unit Code,Qty Unit,Qty,Alt Qty Unit Code,Alt Qty Unit,Alt Qty,Netweight (kg),Gross weight (kg),Trade Value (US$),CIF Trade Value (US$),FOB Trade Value (US$),Flag
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,0,World,WLD,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,94615046,,,,94615046,,132993530,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,0,World,WLD,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,26782325,,,,26782325,,42832135,,,6
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,124,Canada,CAN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,55620,,,,55620,,86640,,,0
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,156,China,CHN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,92388976,,,,92388976,,129375362,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,156,China,CHN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,107236,,,,107236,,760539,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,276,Germany,DEU,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1925,,,,1925,,3078,,,6
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,360,Indonesia,IDN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,26770,,,,26770,,51597,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,410,Rep. of Korea,KOR,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,25305924,,,,25305924,,38463955,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,458,Malaysia,MYS,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,492,,,,492,,55836,,,0
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,490,"Other Asia, nes",,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1995000,,,,1995000,,3181715,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,490,"Other Asia, nes",,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,2098,,,,2098,,805365,,,0
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,699,India,IND,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,175120,,,,175120,,285331,,,0
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,702,Singapore,SGP,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,55950,,,,55950,,151122,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,702,Singapore,SGP,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,36282,,,,36282,,161796,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,826,United Kingdom,GBR,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,99,,,,99,,36771,,,0
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,842,USA,USA,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1245879,,,,1245879,,2406558,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,0,World,WLD,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,95984305,,,,95984305,,119563916,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,0,World,WLD,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,2180442,,,,2180442,,5501654,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,124,Canada,CAN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,18,,,,18,,6398,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,156,China,CHN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,64076377,,,,64076377,,72722450,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,156,China,CHN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1421868,,,,1421868,,3453133,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,276,Germany,DEU,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,174,,,,174,,16118,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,344,"China, Hong Kong SAR",HKG,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,3760,,,,3760,,5672,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,360,Indonesia,IDN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,18,,,,18,,6151,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,381,Italy,ITA,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1,,,,1,,7,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,392,Japan,JPN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,31051183,,,,31051183,,45520330,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,392,Japan,JPN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,373,,,,373,,10868,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,458,Malaysia,MYS,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,219586,,,,219586,,429318,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,484,Mexico,MEX,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,14000,,,,14000,,58380,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,490,"Other Asia, nes",,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,353,,,,353,,8638,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,608,Philippines,PHL,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,9,,,,9,,2220,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,682,Saudi Arabia,SAU,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,364,,,,364,,37750,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,699,India,IND,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,220800,,,,220800,,202492,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,702,Singapore,SGP,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,176000,,,,176000,,153760,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,724,Spain,ESP,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,46,,,,46,,1893,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,842,USA,USA,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,455593,,,,455593,,926158,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,842,USA,USA,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,524224,,,,524224,,1503834,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,0,World,WLD,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,124858364,,,,124858364,,212724791,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,0,World,WLD,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,12585668,,,,12585668,,19093282,,,0
+H4,2014,2014,2014,6,1,3,Re-Export,842,USA,USA,0,World,WLD,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,2603049,,,,2603049,,2925858,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,36,Australia,AUS,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,11275,,,,11275,,36732,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,48,Bahrain,BHR,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,16112,,,,16112,,45489,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,56,Belgium,BEL,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,135,,,,135,,6585,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,56,Belgium,BEL,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,17600,,,,17600,,31998,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,60,Bermuda,BMU,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,122,,,,122,,3588,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,76,Brazil,BRA,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,18000,,,,18000,,20000,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,124,Canada,CAN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,2619866,,,,2619866,,10717025,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,124,Canada,CAN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,9384331,,,,9384331,,10913463,,,0
+H4,2014,2014,2014,6,1,3,Re-Export,842,USA,USA,124,Canada,CAN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,2560072,,,,2560072,,2692964,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,156,China,CHN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,5302614,,,,5302614,,5866912,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,156,China,CHN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,75134,,,,75134,,239103,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,170,Colombia,COL,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,127074,,,,127074,,177606,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,188,Costa Rica,CRI,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,22,,,,22,,3795,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,276,Germany,DEU,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1003840,,,,1003840,,2462496,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,276,Germany,DEU,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,96271,,,,96271,,231234,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,372,Ireland,IRL,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,453028,,,,453028,,1094485,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,376,Israel,ISR,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,232768,,,,232768,,880127,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,381,Italy,ITA,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,700,,,,700,,6548,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,388,Jamaica,JAM,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,117,,,,117,,3888,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,392,Japan,JPN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1612613,,,,1612613,,2883640,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,392,Japan,JPN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1614,,,,1614,,4440,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,410,Rep. of Korea,KOR,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,336320,,,,336320,,1030705,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,410,Rep. of Korea,KOR,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,299388,,,,299388,,829617,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,414,Kuwait,KWT,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,18578,,,,18578,,43632,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,458,Malaysia,MYS,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,40133,,,,40133,,89474,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,484,Mexico,MEX,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,113426382,,,,113426382,,188455883,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,484,Mexico,MEX,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,663679,,,,663679,,989761,,,0
+H4,2014,2014,2014,6,1,3,Re-Export,842,USA,USA,484,Mexico,MEX,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,42929,,,,42929,,227990,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,490,"Other Asia, nes",,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,217820,,,,217820,,554741,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,490,"Other Asia, nes",,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,528015,,,,528015,,1247795,,,0
+H4,2014,2014,2014,6,1,3,Re-Export,842,USA,USA,490,"Other Asia, nes",,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,48,,,,48,,4904,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,528,Netherlands,NLD,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,35200,,,,35200,,58960,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,591,Panama,PAN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,5937,,,,5937,,13422,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,608,Philippines,PHL,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,1034,,,,1034,,7538,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,699,India,IND,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,18400,,,,18400,,21673,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,699,India,IND,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,250,,,,250,,14280,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,702,Singapore,SGP,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,80500,,,,80500,,222985,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,702,Singapore,SGP,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,617611,,,,617611,,1962617,,,0
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,724,Spain,ESP,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,112800,,,,112800,,324540,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,764,Thailand,THA,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,464,,,,464,,3377,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,826,United Kingdom,GBR,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,61214,,,,61214,,277183,,,0
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,862,Venezuela,VEN,,,,,,,,281111,Hydrogen fluoride (hydrofluoric acid),8,Weight in kilograms,7071,,,,7071,,40736,,,0

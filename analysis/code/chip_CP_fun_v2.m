@@ -1,4 +1,4 @@
- function z = chip_CP_fun_v1(par,WIOD)
+ function z = chip_CP_fun_v2(par, par_fixed,data)
 
 % Let's extend Caliendo and Parro (2015) to incorporate chip market
 % environment. To consider the GVC through chip industry, consider S+3
@@ -10,11 +10,8 @@
 % in its recipe. Low quality chips, on the other hand, only requires
 % chemical inputs.
 
-clc
-clear
-S = Par.S;      % Number of industries
-S = S+2;    % Accommodate H-chips and PR sectors.
-J = Par.J;      % Number of countries
+% par.S;      % Number of industries    % Accommodate H-chips and PR sectors.
+% par.J;      % Number of countries
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Parameters %%%%%%%%%%%%%%%
@@ -34,31 +31,37 @@ J = Par.J;      % Number of countries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Data and Equilibrium solution %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% par0 = [par.T; par.tau; par.sigma];
 
-options     = optimoptions('fsolve','Display','iter');
+options     = optimoptions('fsolve','Display','off');
+J= par_fixed.J;
+S= par_fixed.S;
+par_struc.T = par(1:S*J);
+par_struc.tau = par(S*J+1:S*J+J^2*S);
+par_struc.sigma = par(S*J+J^2*S+1:end);
 w_0 = randn(J,1);
-w_sol   = fsolve(@(w) mktclearing(w,par,S,J,L_0,D_0), w_0, options);
+w_sol   = fsolve(@(w) mktclearing(w,par_struc,par_fixed), w_0, options);
     % Solve for equilibrium wage, using trade balance condition
 solution.w = exp(w_sol(:,1))./exp(w_sol(1,1)); % Save the result in structure 'solution'
 % Given the solution, obtain (c, P, pi, X) using while loop.
 cP_prev     = [randn(S*J,1); randn(S*J,1)]; % This vector is converted to exp(cP_prev) in function g.
 gap         = 1;
-tol         = 1e-8;
+tol         = 1e-8; 
 while gap>tol
-    cP_new      = log(cPeq(solution.w(:,1),cP_prev,par,S,J));
+    cP_new      = log(cPeq(solution.w(:,1),cP_prev,par_struc,par_fixed));
     gap         = norm(exp(cP_prev)-exp(cP_new));
     cP_prev     = cP_new;
 end
 solution.c  = exp(cP_new(1:S*J));
 solution.P  = exp(cP_new(S*J+1:end));
 % Using solution.c, obtain the bilateral trade shares.
-solution.pi = pieq(cP_prev,par,S,J);
+solution.pi = pieq(cP_prev,par_struc,par_fixed); 
 % Finally, using market clearing conditions compute expenditure X.
 gap         = 1;
 X_prev      = exp(randn(S*J,1));
 while gap > 1e-8
     Y_prev  = sum(reshape(lastidx(X_prev,S,J,J).*solution.pi,J,J,S),2);
-    X_new   = Xeq(solution.w,solution.P,Y_prev,par,S,J,L_0,D_0);
+    X_new   = Xeq(solution.w,Y_prev,par_fixed,data); 
     gap     = norm(X_prev-X_new);
     X_prev  = X_new;
 end
@@ -68,32 +71,40 @@ solution.X = X_new;
 
 % From data, we get Z, Y, F, and VA.
 
-% WIOD_simple = [Z_aug(:); F_aug(:); Y_aug(:); VA_aug(:)];
+% M = squeeze(sum(reshape(WIOD_Z,J,J,S,S),3));
+% WIOD_X = squeeze(sum(M.*reshape(par.tau,J,J,S),1));
+% gap_pi  = norm(reshape(solution.pi-WIOD_X./sum(WIOD_X),J^2*S,1));
+model_Y = sum(reshape(lastidx(solution.X,S,J,J).*solution.pi,J,J,S),2);
+temp  = reshape(mididx(model_Y(:),S,S,J),J,S,S);
+Y_gamma = sum(temp(:,:,1:end-2).*par_fixed.mygamma(:,:,1:end-2),3);
+model_F = solution.X-Y_gamma(:);
+temp1 = lastidx(model_Y(:)-model_F,S,J,J).*solution.pi;
+temp1 = mididx(temp1,J^2,S,S);
+temp2 = lastidx(par_fixed.mygamma(:),S^2,J,J);
+model_Z = reshape(temp1.*temp2,J,J,S,S);
+model_VA= model_Y(:)-reshape((sum(model_Z,[1,3])),J*S,1);
 
-WIOD_Z = WIOD(1:S^2*J^2);
-WIOD_F = WIOD(S^2*J^2+1:S^2*J^2+J^2+S);
-WIOD_Y = WIOD(S^2*J^2+J^2+S+1:S^2*J^2+J^2+S+S*J);
-WIOD_VA = WIOD(S^2*J^2+J^2+S*J:S^2*J^2+J^2+S+2*S*J);
-
-gap_Z = X_
-
+z=norm([data.Z(:)-model_Z(:); data.F(:)-model_F(:); ...
+    data.Y(:)-model_Y(:); data.VA(:)-model_VA(:)]);
 
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Functions %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
      
-function z = cPeq(w,cP,par,S,J)
+function z = cPeq(w,cP,par,par_fixed)
 % For simplicity, let chip and PR sectors take last three indices in s.
 % index: (1,...S-4 = chemical sector, S-3 = electronic device sector, L_chip, H_chip, PR).
+    S = par_fixed.S;
+    J = par_fixed.J;    
     z           = zeros(J,2*S);
     T           = reshape(par.T,J,S); 
     tau         = reshape(par.tau,J,J,S);
-    theta       = par.theta;
-    mygamma       = reshape(par.mygamma,J,S,S);
-    mygamma_sum   = reshape(par.mygamma_sum,J,S);
-    upsilon     = reshape(par.upsilon,J,S);
-    kappa   = par.kappa;
+    theta       = par_fixed.theta;
+    mygamma       = reshape(par_fixed.mygamma,J,S,S);
+    mygamma_sum   = reshape(par_fixed.mygamma_sum,J,S);
+    upsilon     = reshape(par_fixed.upsilon,J,S);
+    kappa   = par_fixed.kappa;
     c       = reshape(exp(cP(1:S*J)),J,S);           % SJx1 vector
     P       = reshape(exp(cP(S*J+1:2*S*J)),J,S);     % SJx1 vector
     
@@ -106,25 +117,29 @@ function z = cPeq(w,cP,par,S,J)
     P_mygamma     = reshape(P_rep,J,S,S).^mygamma;
     P_prod      = reshape(P_mygamma,J,S,S);   % get products across absorbed sectors
     P_prod      = reshape(prod(P_prod(:,1:S-3,:),2),J,S);   
-    P_prod_nochem   = reshape(prod(P_mygamma(:,(1:S-5),:),2).*P_mygamma(:,S-3,:),J,S);  
+%     P_prod_nochem   = reshape(prod(P_mygamma(:,(1:S-4),:),2).*P_mygamma(:,S-2,:),J,S);  
     % This is the producs of price indices across usual sectors.
     P_prod      = reshape(P_prod(:),J,S); % SxJ by 1 vector
     z(:,1:S-3)  = upsilon(:,1:S-3).*(repmat(w,1,S-3).^(1-mygamma_sum(:,1:S-3))).*P_prod(:,1:S-3); % get c for usual sectors
     z(:,S-2)    = upsilon(:,S-2).*(w.^(1-mygamma_sum(:,S-2)-mygamma(:,S-1,S-2))).*P_prod(:,S-2) ...
         .*P(:,S-1).^(mygamma(:,S-1,S-2));  % contribution of unit price of high-tier chips
-    z(:,S-1)    = upsilon(:,S-1).*(w.^(1-mygamma_sum(:,S-1))).*P_prod_nochem(:,S-1) ... 
-        .*(P(:,S-3)+par.K*P(:,S)); % contribution of unit price of PR-Chemical bundle
-    z(:,S)      = w;
+    z(:,S-1)    = upsilon(:,S-1).*(w.^(1-mygamma_sum(:,S-1))) ... 
+        .*(P(:,S).^(mygamma(:,S,S-1))); % contribution of unit price of PR-Chemical bundle
+    z(:,S)      = w; % PR production cost
     kappa_rep   = kron(kappa,ones(J,1));
     theta_rep   = kron(theta,ones(J,1));    
     z(J*S+1:end) = reshape(kappa_rep.*(THETA_sum).^(-1./theta_rep),J,S); % get P
     z       = reshape(z,2*J*S,1);
 end
 
-function z = Xeq(w,P,Y_prev,par,S,J,L,D)
-    P       = reshape(P,J,S);
-    mygamma   = reshape(par.mygamma,J,S,S);
-    alpha   = reshape(par.alpha,J,S);
+function z = Xeq(w,Y_prev,par_fixed,data)
+    S = par_fixed.S;
+    J = par_fixed.J;
+%     P       = reshape(P,J,S);
+    L = data.L;
+    D = data.D;
+    mygamma   = reshape(par_fixed.mygamma,J,S,S);
+    alpha   = reshape(par_fixed.alpha,J,S);
     % production amount
     % S: PR sector
     % S-1: chips sector
@@ -134,27 +149,31 @@ function z = Xeq(w,P,Y_prev,par,S,J,L,D)
     Y_temp  = reshape(mididx(Y_prev(:),S,S,J),J,S,S);
     Y_mygamma = sum(Y_temp(:,:,1:end-2).*mygamma(:,:,1:end-2),3);
     Y_mygamma = reshape(Y_mygamma(:),J,S);
-    z       = Y_mygamma+alpha.*repmat(w.*L+D,1,S);
-    z(:,S-3)= z(:,S-3)+mygamma(:,S-2,S-3) ...
-        .*(par.K*P(:,end))./(par.K*P(:,end)+P(:,S-4)).*Y_prev(:,S-2);
+    z       = Y_mygamma+alpha.*repmat(w.*L+sum(D,2),1,S);
     z(:,S-1)=mygamma(:,S-2,S-1).*Y_prev(:,S-2);
-    z(:,S)=mygamma(:,S-3,S-1).*(par.K*P(:,end))./(par.K*P(:,end)+P(:,S-3)).*Y_prev(:,S-1);
+    z(:,S)=mygamma(:,S-1,S).*Y_prev(:,S-1);
     z = z(:);
 end
 
-function z = pieq(cP,par,S,J)
+function z = pieq(cP,par,par_fixed)
+    S = par_fixed.S;
+    J = par_fixed.J;    
     T = par.T;
     tau = par.tau;
-    theta = par.theta;
+    theta = par_fixed.theta;
     c_temp      = mididx(exp(cP(1:S*J)),S,J,J);
     T_temp      = mididx(T,S,J,J);
     THETA       = T_temp.*((c_temp.*tau).^(-kron(theta,ones(J^2,1))));
     THETA_sum   = sum(reshape(THETA,J,S*J),1)';
     z     = THETA./lastidx(THETA_sum,S,J,J);
 end
-function z = mktclearing(w,par,S,J,L,D)
+
+function z = mktclearing(w,par,par_fixed)
 % w: J-1 vector (first country's wage is numeraire)
 % X: SxJ vector
+    S = par_fixed.S;
+    J = par_fixed.J;
+    D = data.D;
     w       = exp(w(1:J));
     w       = w/w(1);       % Normalize the wage vector
     X       = exp(randn(S*J,1));
@@ -162,23 +181,23 @@ function z = mktclearing(w,par,S,J,L,D)
     gap     = 1;
     tol     = 1e-8;
     while gap>tol
-        cP_new  = log(cPeq(w,cP_prev,par,S,J));
+        cP_new  = log(cPeq(w,cP_prev,par,par_fixed));
         gap     = norm(exp(cP_prev)-exp(cP_new));
         cP_prev = cP_new;
     end
-    pi_temp     = pieq(cP_prev,par,S,J);
-    p_temp      = cP_prev(S*J+1:end);
+    pi_temp     = pieq(cP_prev,par,par_fixed);
+%     p_temp      = cP_prev(S*J+1:end);
     gap         = 1;
     X_prev=X;
      while gap > 1e-8
         Y_prev  = sum(reshape(lastidx(X_prev,S,J,J).*pi_temp,J,J,S),2);
-        X_new   = Xeq(w,p_temp,Y_prev,par,S,J,L,D);
+        X_new   = Xeq(w,Y_prev,par_fixed,data);
         gap     = norm(X_prev-X_new);
         X_prev  = X_new;
      end
      X_sum  = sum(reshape(X_prev,J,S),2);
      Y_sum  = sum(reshape(Y_prev,J,S),2);
-     z_temp = X_sum-(Y_sum+D);
+     z_temp = X_sum-(Y_sum+sum(D,2));
      z(1:J) = z_temp;
 end
 
