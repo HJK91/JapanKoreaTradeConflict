@@ -50,20 +50,21 @@ while gap>tol
     gap         = norm(exp(cP_prev)-exp(cP_new));
     cP_prev     = cP_new;
 end
-solution.c  = exp(cP_new(1:S*J));
-solution.P  = exp(cP_new(S*J+1:end));
-% Using solution.c, obtain the bilateral trade shares.
-solution.pi = pieq(cP_prev,tau,par_fixed); %pieq(cP,tau,par_fixed)
+solution.c  = exp(reshape(cP_new(1:S*J),J,S));
+solution.P  = exp(reshape(cP_new(S*J+1:end),J,S));
+solution.pi = pieq(cP_prev,tau,par_fixed).*par_fixed.mypi(:); %pieq(cP,tau,par_fixed)
 % Finally, using market clearing conditions compute expenditure X.
 gap         = 1;
 X_prev      = exp(randn(S*J,1));
 while gap > 1e-8
-    Y_prev  = sum(reshape(lastidx(X_prev,S,J,J).*solution.pi,J,J,S),2);
+    Y_prev  = squeeze(sum(reshape(lastidx(X_prev,S,J,J).*solution.pi,J,J,S),2));
     X_new   = Xeq(solution.w,solution.P,Y_prev,par_fixed,data);  % Xeq(w,P,Y_prev,par_fixed,data)
     gap     = norm(X_prev-X_new);
     X_prev  = X_new;
 end
-solution.X = X_new;
+solution.pi = reshape(solution.pi,J,J,S);
+solution.X = reshape(X_prev,J,S);
+solution.Y = Y_prev;
 
 
 %%
@@ -76,32 +77,28 @@ function z = cPeq(w,cP,tau,par_fixed)
 % index: (1,...S-4 = chemical sector, S-3 = electronic device sector, L_chip, H_chip, PR).
     S = par_fixed.S;
     J = par_fixed.J;    
-    z           = zeros(J,2*S);
-    tau         = reshape(tau,J,J,S);
     theta       = par_fixed.theta;
     delta       = par_fixed.delta;
-    mypi        = reshape(par_fixed.mypi,J,J,S);
-    mygamma       = reshape(par_fixed.mygamma,J,S,S);
-    mygamma_sum   = reshape(par_fixed.mygamma_sum,J,S);
+    mypi        = par_fixed.mypi;
+    mygamma     = par_fixed.mygamma;
+    mygamma_sum = par_fixed.mygamma_sum;
+    z           = zeros(J,2*S);
     c       = reshape(exp(cP(1:S*J)),J,S);           % SJx1 vector c_hat
     P       = reshape(exp(cP(S*J+1:2*S*J)),J,S);     % SJx1 vector P_hat
     c_temp = mididx(c,S,J,J);   % expand the index to match SJ^2x1 vector tau.
-    P_rep       = mididx(P,S,S,J);  % expand the index to match (S^2)J by 1 vector mygamma.
-    P_mygamma     = reshape(P_rep,J,S,S).^mygamma;
-    P_prod      = reshape(P_mygamma,J,S,S);   % get products across absorbed sectors
-    P_prod      = reshape(prod(P_prod(:,1:S-3,:),2),J,S);   
-%     P_prod_nochem   = reshape(prod(P_mygamma(:,(1:S-4),:),2).*P_mygamma(:,S-2,:),J,S);  
+    P_rep       = repmat(P(:),S,1);  % expand the index to match (S^2)J by 1 vector mygamma.
+    P_mygamma   = reshape(P_rep,J,S,S).^mygamma;
+    P_prod      = prod(reshape(P_mygamma,J,S,S),2);   % get products across absorbed sectors
+    P_prod      = reshape(P_prod,J,S);   
     % This is the producs of price indices across usual sectors.
-    P_prod      = reshape(P_prod(:),J,S); % SxJ by 1 vector
-    z(:,1:S-3)  = (repmat(w,1,S-3).^(1-mygamma_sum(:,1:S-3))).*P_prod(:,1:S-3); % get c for usual sectors
-    z(:,S-2)    = (w.^(1-mygamma_sum(:,S-2)-mygamma(:,S-1,S-2))) ...
-        .*(P(:,S-1).*delta+P(:,S-1).*(1-delta)).^(mygamma(:,S-1,S-2));  % delta: cost share of HF and PR composition.
+    z(:,1:S-3)  = (repmat(w,1,S).^(1-mygamma_sum(:,1:S-3))).*P_prod(:,1:S-3); % get c for usual sectors
+    z(:,S-2)    = (w.^(1-mygamma(:,S-1,S-2))).*(P(:,S-1).*delta+P(:,S).*(1-delta)).^(mygamma(:,S-1,S-2));  % delta: cost share of HF and PR composition.
     z(:,S-1)    = w; % contribution of unit price of PR-Chemical bundle
     z(:,S)      = w; % PR production cost
     theta_rep   = kron(theta,ones(J,1));
     THETA       = mypi(:).*((c_temp.*reshape(tau,S*J^2,1)).^(-kron(theta,ones(J^2,1))));  % numerators of pi.
     THETA_sum   = sum(reshape(THETA,J,S*J),1)';        
-    z(J*S+1:end) = reshape((THETA_sum).^(-1./theta_rep),J,S); % get P
+    z(:,S+1:end) = reshape((THETA_sum).^(-1./theta_rep),J,S); % get P
     z       = reshape(z,2*J*S,1);
 end
 
@@ -137,7 +134,7 @@ function z = pieq(cP,tau,par_fixed)
     J       = par_fixed.J;    
     theta   = par_fixed.theta;
     c = exp(mididx(cP(1:S*J),S,J,J));
-    P = exp(mididx(cP(S*J+1:end),S,J,J));
+    P = exp(lastidx(cP(S*J+1:end),S,J,J));
     z = (c.*tau(:)./P).^(-kron(theta,ones(J^2,1))) ;
 end
 

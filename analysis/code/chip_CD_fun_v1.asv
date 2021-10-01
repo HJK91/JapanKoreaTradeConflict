@@ -37,7 +37,7 @@ options     = optimoptions('fsolve','Display','off');
 J= par_fixed.J;
 S= par_fixed.S;
 
-w_0 = sort(randn(J,1),'descend');
+w_0 = zeros(J,1);
 w_sol   = fsolve(@(w) mktclearing(w,tau,par_fixed,data), w_0, options);
     % Solve for equilibrium wage, using trade balance condition
 solution.w = exp(w_sol(:,1))./exp(w_sol(1,1)); % Save the result in structure 'solution'
@@ -78,7 +78,6 @@ function z = cPeq(w,cP,tau,par_fixed)
     S = par_fixed.S;
     J = par_fixed.J;    
     theta       = par_fixed.theta;
-    delta       = par_fixed.delta;
     mypi        = par_fixed.mypi;
     mygamma     = par_fixed.mygamma;
     mygamma_sum = par_fixed.mygamma_sum;
@@ -87,12 +86,11 @@ function z = cPeq(w,cP,tau,par_fixed)
     P       = reshape(exp(cP(S*J+1:2*S*J)),J,S);     % SJx1 vector P_hat
     c_temp = mididx(c,S,J,J);   % expand the index to match SJ^2x1 vector tau.
     P_rep       = repmat(P(:),S,1);  % expand the index to match (S^2)J by 1 vector mygamma.
-    P_mygamma   = reshape(P_rep,J,S,S).^mygamma;
+    P_mygamma     = reshape(P_rep,J,S,S).^mygamma;
     P_prod      = prod(reshape(P_mygamma,J,S,S),2);   % get products across absorbed sectors
     P_prod      = reshape(P_prod,J,S);   
     % This is the producs of price indices across usual sectors.
-    z(:,1:S)    = (repmat(w,1,S).^(1-mygamma_sum)).*P_prod; % get c for usual sectors
-    z(:,S-2)    = (w.^(1-mygamma(:,S-1,S-2))).*(P(:,S-1).*delta+P(:,S).*(1-delta)).^(mygamma(:,S-1,S-2));  % delta: cost share of HF and PR composition.
+    z(:,1:S)  = (repmat(w,1,S).^(1-mygamma_sum)).*P_prod; % get c for usual sectors
     theta_rep   = kron(theta,ones(J,1));
     THETA       = mypi(:).*((c_temp.*reshape(tau,S*J^2,1)).^(-kron(theta,ones(J^2,1))));  % numerators of pi.
     THETA_sum   = sum(reshape(THETA,J,S*J),1)';        
@@ -100,16 +98,13 @@ function z = cPeq(w,cP,tau,par_fixed)
     z       = reshape(z,2*J*S,1);
 end
 
-function z = Xeq(w,P,Y_prev,par_fixed,data)
+function z = Xeq(w,Y_prev,par_fixed,data)
     S = par_fixed.S;
     J = par_fixed.J;
-    P = exp(reshape(P,J,S));
     D = data.D;
     wL = par_fixed.wL;
     
     mygamma   = reshape(par_fixed.mygamma,J,S,S);
-    mygamma_sum   = reshape(par_fixed.mygamma_sum,J,S);
-    delta       = par_fixed.delta;
     alpha   = reshape(par_fixed.alpha,J,S);
     % production amount
     % S: PR sector
@@ -118,12 +113,12 @@ function z = Xeq(w,P,Y_prev,par_fixed,data)
     % S-3: chemical sector
     Y_prev      = reshape(Y_prev,J,S);
     Y_temp      = reshape(mididx(Y_prev(:),S,S,J),J,S,S);
-    Y_mygamma   = sum(Y_temp(:,:,1:end-3).*mygamma(:,:,1:end-3),3);
+    Y_mygamma   = sum(Y_temp.*mygamma,3);
     Y_mygamma   = reshape(Y_mygamma(:),J,S);
     z            = Y_mygamma+alpha.*repmat(w.*wL+sum(D,2),1,S);
     z(:,S-2)    = mygamma(:,S-2,S-3).*Y_prev(:,S-3); % expenditure of chip = cost share of electronic devices
-    z(:,S-1)    = mygamma_sum(:,S-2).*((P(:,S-1).*delta)./(P(:,S-1).*delta+P(:,S).*(1-delta))).*Y_prev(:,S-2); % expenditure of PR = cost share of chips
-    z(:,S)      = mygamma_sum(:,S-2).*((P(:,S).*(1-delta))./(P(:,S-1).*delta+P(:,S).*(1-delta))).*Y_prev(:,S-2);
+    z(:,S-1)    = mygamma(:,S-1,S-2).*Y_prev(:,S-2); % expenditure of PR = cost share of chips
+    z(:,S)      = mygamma(:,S,S-2).*Y_prev(:,S-2);
     z = z(:);
 end
 
@@ -143,9 +138,8 @@ function z = mktclearing(w,tau,par_fixed,data)
     J = par_fixed.J;
     
     D = data.D;
-    w       = exp(w(1:J));
+    w       = exp(w);
     w       = w/w(1);       % Normalize the wage vector
-    X       = data.X_ttl(:);
     cP_prev = randn(2*S*J,1); % LOG of cost and price: this can be negative!
     gap     = 1;
     tol     = 1e-8;
@@ -157,11 +151,10 @@ function z = mktclearing(w,tau,par_fixed,data)
     mypi        = reshape(par_fixed.mypi,J,J,S);
     pi_temp     = pieq(cP_prev,tau,par_fixed).*mypi(:); % new trade shares after change 
     gap         = 1;
-    X_prev=X;
-    P_prev = cP_prev(S*J+1:end);
+    X_prev=data.X(:);
      while gap > 1e-8
-        Y_prev  = sum(reshape(lastidx(X_prev,S,J,J).*pi_temp,J,J,S),2);
-        X_new   = Xeq(w,P_prev,Y_prev,par_fixed,data);
+        Y_prev  = squeeze(sum(reshape(lastidx(X_prev,S,J,J).*pi_temp,J,J,S),2));
+        X_new   = Xeq(w,Y_prev,par_fixed,data);
         gap     = norm(X_prev-X_new);
         X_prev  = X_new;
      end

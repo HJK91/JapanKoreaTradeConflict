@@ -1,5 +1,4 @@
-clc
-clear
+
 load('/Users/hj/Documents/GitHub/JapanKoreaTradeConflict/analysis/input/WIOD.mat')
 S = 56;
 J = 44;
@@ -74,7 +73,7 @@ end
 Z_agg_vec = Z_agg(:); 
 % To test, Z_agg_WIODform = reshape(Z_agg_WIODform,J_agg*S_agg,J_agg*S_agg);
 
-%% Now, add three sectors: chip, PR, and HF.
+% Now, add three sectors: chip, PR, and HF.
 
 Z_aug = zeros(J_agg,J_agg,S_agg+3,S_agg+3);
 % export country, importing country, exporting sector, importing sector
@@ -86,11 +85,11 @@ Z_aug(:,:,:,S_agg+2) = 0; % PR sector use labor only--no import
 
 % chips are only used to make electronic devices
 
-%% Take the PR and chip global trade data
+% Take the PR and chip global trade data
 PR_table= readtable('/Users/hj/Documents/GitHub/JapanKoreaTradeConflict/build/input/PR_downstream.xlsx');
 % PR_table_importingcountries = PR_table{:,1:2};
 temp = PR_table{:,end};
-PR_table_importingamount = [temp(3); temp(4); temp(1); temp(2)+temp(5)]*1e-6;
+PR_table_importingamount = [temp(2)+temp(5);temp(3); temp(4); temp(1) ]*1e-6;
 
 chip_table =readtable('/Users/hj/Documents/GitHub/JapanKoreaTradeConflict/build/input/chip_trade_all.xlsx');
 HF_table =readtable('/Users/hj/Documents/GitHub/JapanKoreaTradeConflict/build/input/HF_trade_all.xlsx');
@@ -112,15 +111,15 @@ HF_trade_val    = HF_table{:,32};
 % chip_korea_export = [chip_korea_export([38 51 15]); sum(chip_korea_export(korea_idx_other)) ]*1e-6;
 % chip_us_export = [chip_us_export([70 115 132]); sum(chip_us_export(us_idx_other))]*1e-6;
 
-char_vec = {('JPN');('KOR');('USA'); ('WLD')};
+char_vec = {('WLD');('JPN');('KOR');('USA') };
 char_trade= {'Export', 'Import'};
-for i=1:size(char_vec,1) 
-    for n = 1:size(char_vec,1) 
+for i=1:size(char_vec,1)  % exporter
+    for n = 1:size(char_vec,1) % importer
         if i == n 
             continue
         end
-            char1   = char_vec{i,1};
-            char2   = char_vec{n,1};
+            char1   = char_vec{i,1}; % exporter name
+            char2   = char_vec{n,1}; % importer country name
             char3   = char_trade{1,1};
             
             idx1_chip = strcmp(chip_reporter,char1);
@@ -130,8 +129,8 @@ for i=1:size(char_vec,1)
             idx1_HF = strcmp(HF_reporter,char1);
             idx2_HF = strcmp(HF_partner,char2);
             idx3_HF = strcmp(HF_trade,char3);            
-        if i ==4
-            % world->Japan semiconductor trade
+        if i ==1
+            % if n = 2, world->Japan semiconductor trade
             idx1_chip   = strcmp(chip_partner,char1); % partner: world
             idx2_chip   = strcmp(chip_reporter,char2); % reporter: japan
             idx3_chip   = strcmp(chip_trade,char_trade{1,2}); % Japan's import
@@ -141,9 +140,10 @@ for i=1:size(char_vec,1)
             idx2_HF     = strcmp(HF_reporter,char2); % reporter: japan
             idx3_HF     = strcmp(HF_trade,char_trade{1,2}); % Japan's import
             idx_HF      = idx1_HF.*idx2_HF.*idx3_HF>0; % Japan's imports from all countries
-            % now, imports from US and Korea 
+            % now, imports from US and Korea -- substracted from imoprts
+            % from WLD => imports from ROW.
             char_vec_temp       = char_vec;
-            char_vec_temp([n,4])= [];
+            char_vec_temp([1, n])= [];
             idx_others_chip     = zeros(length(idx_chip),length(char_vec_temp));
             idx_others_HF       = zeros(length(idx_HF),length(char_vec_temp));
             for j = 1: length(char_vec_temp)
@@ -176,17 +176,21 @@ Z_aug(3,3,3,2) = chip_table{51,end}*1e-6;
 Z_aug(4,4,3,2) = chip_table{183,end}*1e-6;
 Z_aug(2,2,3,2) = (2706.*1e+9/105)*1e-6*0.24; % Toshiba's domestic memory sales
 Z_aug(2,:,4,3) = PR_table_importingamount;
-for i = 1:4
-    
-    Z_aug(i,i,5,3) = Z_aug(2,i,5,3)*0.15; % accommodate the multinational production of PR
+Z_aug(2,[1 2 4],4,3) = Z_aug(2,[1 2 4],4,3)*0.3; % product memory chip industry share
+HF_hq_korea = [35213805; 43640643; 0 ;361282]*1e-6;
+for i = 1: 4
+    pure_HF_factor = HF_hq_korea./Z_aug(:,3,5,3);
+    pure_HF_factor(isnan(pure_HF_factor)) = 1;
+    chip_factor =  squeeze(sum(Z_aug,[2 4]));
+    chip_factor =  chip_factor(i,3)./chip_factor(3,3);
+    Z_aug(:,i,5,3) = Z_aug(:,i,5,3).*(pure_HF_factor)*chip_factor;
     if i ==2
         continue
     else
         Z_aug(i,i,4,3) = Z_aug(2,i,4,3)*0.15; % accommodate the multinational production of PR
     end
 end
-
-
+Z_aug(isnan(Z_aug))=0;
  % 12,224 million yen: 2016 Stella cheifa's HF sales. 
 %%
 S_aug = S_agg+3;
@@ -202,25 +206,22 @@ clear chip_korea_export chip_us_export PR_table chip_table ...
  
 % Augment F, Y and VA from Z_aug.
 F_aug                   = zeros(J_agg,J_agg,S_aug);
-Y_aug                   = zeros(J_agg,S_aug);
-VA_aug                  = zeros(J_agg,S_aug);
 F_aug(:,:,1:S_agg)      = F_agg;
-Y_aug(:,1:S_agg)        = Y_agg;
-VA_aug(:,1:S_agg)       = VA_agg;
 temp_Y                  = squeeze(sum(Z_aug,[2 4]));
 temp_V                  = squeeze(sum(Z_aug,[1,3]));
-Y_aug(:,S_agg+1:end)    = temp_Y(:,S_agg+1:end);
-VA_aug(:,S_agg+1:end)   = Y_aug(:,S_agg+1:end) - temp_V(:,S_agg+1:end);
+Y_aug = temp_Y+squeeze(sum(F_aug,2));
+VA_aug   = Y_aug - temp_V;
+X_ind = squeeze(sum(Z_aug,4))+F_aug;
+X_ttl= squeeze(sum(Z_aug,[1,4]))+squeeze(sum(F_aug,1));
 
 % feed in the data into the function to be minimized
 %% Take the labor and deficit data
 M           = squeeze(sum(Z_aug,3));
 L_0         = [5e+9; 1.2e+7; 5e+7; 3e+8].*1e-6; % Change this to actual data
 D_0         = squeeze(sum(M,1))-squeeze(sum(M,2)); 
-WIOD_simple = [Z_aug(:); F_aug(:); Y_aug(:); VA_aug(:)];
-
-data.X      = squeeze(sum(Z_aug,[1 3])); % X_j^s
 data.Y      = Y_aug;
+data.X_ind  = X_ind;
+data.X_ttl  = X_ttl;
 data.VA     = VA_aug;
 data.F      = F_aug;
 data.Z      = Z_aug;
@@ -228,13 +229,12 @@ data.L      = L_0;
 data.D      = D_0;
 
 %% Set parameters for counterfactuals: parameters are array forms
-tau             = ones(4,4,5);
-tau(2,3,[4 5])  = 5;
 
-par_fixed.theta     = 5+rand(S_aug,1)*0.1;    % CA parameter theta: change this to estimated one later
+
+par_fixed.theta     = [4.55; 10.6; 10.6; 4.75; 4.75];    % CA parameter theta: change this to estimated one later
 
 par_fixed.mygamma   = squeeze(sum(Z_aug,1))./reshape(mididx(Y_aug,S_aug,S_aug,J_agg),J_agg,S_aug,S_aug);
-par_fixed.mygamma(:,4,3) = sum(Z_aug(:,:,4,3)+Z_aug(:,:,5,3),1)'./Y_aug(:,3); % share of intermediate input expenditure in chip production
+% par_fixed.mygamma(:,4,3) = sum(Z_aug(:,:,4,3)+Z_aug(:,:,5,3),1)'./Y_aug(:,3); % share of intermediate input expenditure in chip production
 par_fixed.mygamma(isnan(par_fixed.mygamma )) = 0;
 par_fixed.mygamma_sum   = squeeze(sum(reshape(par_fixed.mygamma,J_agg,S_aug,S_aug),2)); % 1-labor share = gamma_sum
 
@@ -242,18 +242,28 @@ par_fixed.alpha     = squeeze(sum(F_aug,1))./squeeze(sum(F_aug,[1,3]))';
 par_fixed.alpha(isnan(par_fixed.alpha)) = 0;
 
 par_fixed.delta     = (sum(Z_aug(:,:,4,3),1)./(sum(Z_aug(:,:,4,3),1)+sum(Z_aug(:,:,5,3),1)))';
-par_fixed.mypi      = squeeze(sum(Z_aug,3))./reshape(lastidx(squeeze(sum(squeeze(sum(Z_aug,3)),1)),S_aug,J_agg,J_agg),J_agg,J_agg,S_aug);
-par_fixed.mypi(:,:,4) = eye(J_agg,J_agg);
-par_fixed.mypi(:,:,5) = eye(J_agg,J_agg);
-par_fixed.wL        = sum(reshape(par_fixed.mygamma_sum,J_agg,S_aug).*data.Y,2);
+% par_fixed.mypi      = squeeze(sum(Z_aug,3))./reshape(lastidx(squeeze(sum(Z_aug,[1,3])),S_aug,J_agg,J_agg),J_agg,J_agg,S_aug);
+% par_fixed.mypi(:,:,4) = eye(J_agg,J_agg);
+% par_fixed.mypi(:,:,5) = eye(J_agg,J_agg);
+
+par_fixed.mypi = X_ind./reshape(lastidx(X_ttl,S_aug,J_agg,J_agg),J_agg,J_agg,S_aug);
+mypi = X_ind(:)./lastidx(X_ttl,S_aug,J_agg,J_agg);
+par_fixed.mypi=reshape(mypi,J_agg,J_agg,S_aug);
+data.D = sum(X_ttl,2)-sum(reshape(lastidx(data.X_ttl,S_aug,J_agg,J_agg).*par_fixed.mypi(:),J_agg,J_agg,S_aug),[2 3]);
+par_fixed.wL        = sum(data.VA,2);
 par_fixed.S         = size(Z_aug,3);
 par_fixed.J         = size(Z_aug,1);
 
 
-%% Put the calibration work
-chip_CP_fun_v3
-
-
+% Put the calibration work
+%% check the validity of parameters
+Y_accounting = squeeze(sum(reshape(par_fixed.mypi(:).*lastidx(data.X_ttl(:),S_aug,J_agg,J_agg),J_agg,J_agg,S_aug),2));
+Y_gap = (data.Y(:)-Y_accounting(:))./data.Y(:);
+X_gap = data.X_ttl-squeeze(sum(reshape(par_fixed.mygamma(:).*mididx(data.Y,S_aug,S_aug,J_agg),J_agg,S_aug,S_aug),3)) ...
+    -par_fixed.alpha.*(par_fixed.wL+sum(data.D,2));
+TB_gap1 = sum(data.X_ttl,2)...
+    -sum(reshape(lastidx(data.X_ttl,S_aug,J_agg,J_agg).*par_fixed.mypi(:),J_agg,J_agg,S_aug),[1 3])';
+TB_gap2 = sum(reshape(lastidx(data.X_ttl,S_aug,J_agg,J_agg).*par_fixed.mypi(:),J_agg,J_agg,S_aug),[2 3])+sum(data.D,2);
 function z = mididx(x,idx1,idx2,idx3)
     % expand the middle index
     x_temp = repmat(reshape(x,idx3,idx1),idx2,1);
