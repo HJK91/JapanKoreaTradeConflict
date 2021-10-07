@@ -43,7 +43,7 @@ solution_unif = solution;
 display(solution_Leontief.Y(:,3)./solution.Y(:,3)-1)
 %% Exercise 3. Compare it with C-D production shape
 tau             = ones(4,4,5);
-tau(2,3,4)  = 1.262;
+tau(2,3,4)  = 1.00698;
 tau(2,3,5)  = 1.562;
 % par_fixed.mygamma   = squeeze(sum(Z_aug,1))./reshape(mididx(Y_aug,S_aug,S_aug,J_agg),J_agg,S_aug,S_aug);
 % par_fixed.mygamma(isnan(par_fixed.mygamma )) = 0;
@@ -56,8 +56,8 @@ display(solution.pi(2,3,[4 5]));
 real_wage_hat_CD = solution_CD.w./prod(solution_CD.P.^par_fixed.alpha,2);
 
 display(real_wage_hat-1)
-display(real_wage_hat_CD
-display((real_wage_hat_CD-real_wage_hat)./(real_wage_hat-1))
+display(real_wage_hat_CD-1)
+display(real_wage_hat./real_wage_hat_CD-1)
 
 %% Exercise 4. What would have been the best trade policy for japanse governement?
 

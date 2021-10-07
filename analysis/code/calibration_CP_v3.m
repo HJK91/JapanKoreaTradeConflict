@@ -176,6 +176,7 @@ Z_aug(3,3,3,2) = chip_table{51,end}*1e-6;
 Z_aug(4,4,3,2) = chip_table{183,end}*1e-6;
 Z_aug(2,2,3,2) = (2706.*1e+9/105)*1e-6*0.24; % Toshiba's domestic memory sales
 Z_aug(2,:,4,3) = PR_table_importingamount;
+Z_aug([1 4],3,4,3) = [700133 13352807]*1e-6; % use trade data from Korean custom 
 Z_aug(2,[1 2 4],4,3) = Z_aug(2,[1 2 4],4,3)*0.3; % product memory chip industry share
 HF_hq_korea = [35213805; 43640643; 0 ;361282]*1e-6;
 for i = 1: 4
