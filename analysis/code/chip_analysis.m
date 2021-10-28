@@ -14,7 +14,7 @@ par_fixed.mygamma_sum   = squeeze(sum(reshape(par_fixed.mygamma,J_agg,S_aug,S_au
 PR_import = [51103157 ; 328294898]; % from world; from japan
 HF_import = [63519010 ; 9375581]; % from world; from japan
 input_import_share_japan = [PR_import(2); HF_import(2)]./[sum(PR_import); sum(HF_import)];
-tau             = ones(4,4,5);PR 
+tau             = ones(4,4,5);
 % tau(2,3,4)  = 1.00698;
 tau(2,3,4)  = 1.262;
 tau(2,3,5)  = 1.562;
@@ -56,7 +56,7 @@ display(solution.pi(2,3,[4 5]));
 real_wage_hat_CD = solution_CD.w./prod(solution_CD.P.^par_fixed.alpha,2);
 
 display(real_wage_hat-1)
-display(real_wage_hat_CD
+display(real_wage_hat_CD)
 display((real_wage_hat_CD-real_wage_hat)./(real_wage_hat-1))
 
 %% Exercise 4. What would have been the best trade policy for japanse governement?

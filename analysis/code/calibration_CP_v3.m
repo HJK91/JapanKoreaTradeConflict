@@ -265,6 +265,8 @@ X_gap = data.X_ttl-squeeze(sum(reshape(par_fixed.mygamma(:).*mididx(data.Y,S_aug
 TB_gap1 = sum(data.X_ttl,2)...
     -sum(reshape(lastidx(data.X_ttl,S_aug,J_agg,J_agg).*par_fixed.mypi(:),J_agg,J_agg,S_aug),[1 3])';
 TB_gap2 = sum(reshape(lastidx(data.X_ttl,S_aug,J_agg,J_agg).*par_fixed.mypi(:),J_agg,J_agg,S_aug),[2 3])+sum(data.D,2);
+
+% functions that control index matching
 function z = mididx(x,idx1,idx2,idx3)
     % expand the middle index
     x_temp = repmat(reshape(x,idx3,idx1),idx2,1);

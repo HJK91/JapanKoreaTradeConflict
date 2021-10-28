@@ -1,0 +1,368 @@
+Classification,Year,Period,Period Desc.,Aggregate Level,Is Leaf Code,Trade Flow Code,Trade Flow,Reporter Code,Reporter,Reporter ISO,Partner Code,Partner,Partner ISO,2nd Partner Code,2nd Partner,2nd Partner ISO,Customs Proc. Code,Customs,Mode of Transport Code,Mode of Transport,Commodity Code,Commodity,Qty Unit Code,Qty Unit,Qty,Alt Qty Unit Code,Alt Qty Unit,Alt Qty,Netweight (kg),Gross weight (kg),Trade Value (US$),CIF Trade Value (US$),FOB Trade Value (US$),Flag
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,0,World,WLD,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,2025651590,,,,3156395,,2507888314,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,0,World,WLD,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,6296177867,,,,5508293,,8403706574,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,36,Australia,AUS,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,30168,,,,150,,228152,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,40,Austria,AUT,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,2750,,,,29,,22888,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,56,Belgium,BEL,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,911,,,,5,,4065,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,56,Belgium,BEL,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,52898,,,,75,,113713,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,76,Brazil,BRA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,7656815,,,,1956,,2984356,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,100,Bulgaria,BGR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,27000,,,,64,,97763,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,120,Cameroon,CMR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,700,,,,1,,1974,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,124,Canada,CAN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,98549,,,,4413,,3506318,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,124,Canada,CAN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,544,,,,2,,2597,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,156,China,CHN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,285538538,,,,401556,,319053526,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,156,China,CHN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,2602417231,,,,2044282,,3118850386,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,188,Costa Rica,CRI,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,26,,,,9,,6873,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,203,Czechia,CZE,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,3083498,,,,2481,,3785368,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,208,Denmark,DNK,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1500,,,,3,,2373,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,246,Finland,FIN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,173500,,,,163,,129785,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,246,Finland,FIN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,6803,,,,37,,56214,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,251,France,FRA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,225892,,,,1041,,827036,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,251,France,FRA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,4976,,,,7,,10793,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,276,Germany,DEU,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1352176,,,,707,,561880,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,276,Germany,DEU,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,12417440,,,,22889,,34920677,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,344,"China, Hong Kong SAR",HKG,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1966623,,,,5346,,4247900,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,344,"China, Hong Kong SAR",HKG,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,372024901,,,,672428,,1025887539,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,348,Hungary,HUN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,12976134,,,,1081,,1648512,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,360,Indonesia,IDN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,384828,,,,5672,,4506334,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,360,Indonesia,IDN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,61677540,,,,13797,,21049741,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,376,Israel,ISR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1424858,,,,17627,,14005600,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,376,Israel,ISR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,4016,,,,84,,127811,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,381,Italy,ITA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,50818,,,,339,,269004,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,381,Italy,ITA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,459664,,,,198,,301883,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,410,Rep. of Korea,KOR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,192659045,,,,945522,,751256929,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,410,Rep. of Korea,KOR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,143714337,,,,195381,,298081902,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,414,Kuwait,KWT,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,5880,,,,8,,6533,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,458,Malaysia,MYS,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,31346201,,,,41359,,32861178,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,458,Malaysia,MYS,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,8158092,,,,4959,,7565892,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,484,Mexico,MEX,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,24624,,,,74,,58539,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,484,Mexico,MEX,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,20197130,,,,2824,,4308850,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,490,"Other Asia, nes",,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1111234209,,,,1188252,,944116364,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,490,"Other Asia, nes",,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,2302676290,,,,1927804,,2941147290,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,516,Namibia,NAM,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,2304,,,,7,,5228,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,528,Netherlands,NLD,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,20013785,,,,15918,,12647873,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,528,Netherlands,NLD,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1061388,,,,1038,,1584328,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,540,New Caledonia,NCL,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,4000,,,,9,,7053,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,554,New Zealand,NZL,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,18000,,,,18,,26818,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,586,Pakistan,PAK,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,6000,,,,3,,2241,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,608,Philippines,PHL,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,26826474,,,,21842,,17354765,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,608,Philippines,PHL,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,42360699,,,,5507,,8402211,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,637,"North America and Central America, nes",,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,86000,,,,801,,636179,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,643,Russian Federation,RUS,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,4440000,,,,307,,467797,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,659,Saint Kitts and Nevis,KNA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,7694,,,,417,,331174,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,682,Saudi Arabia,SAU,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,2,,,,3,,4089,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,699,India,IND,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,16158,,,,42,,33051,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,699,India,IND,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,4179585,,,,681,,1039410,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,702,Singapore,SGP,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,160760067,,,,273328,,217170330,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,702,Singapore,SGP,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,496431294,,,,414888,,632971656,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,703,Slovakia,SVK,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,8059280,,,,709,,1081091,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,704,Viet Nam,VNM,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,9892,,,,66,,52158,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,704,Viet Nam,VNM,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,6452700,,,,817,,1246353,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,710,South Africa,ZAF,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,506500,,,,423,,645665,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,724,Spain,ESP,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,309,,,,3,,2430,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,724,Spain,ESP,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,564997,,,,211,,321799,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,752,Sweden,SWE,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,50,,,,5,,4141,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,752,Sweden,SWE,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,500,,,,2,,2314,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,757,Switzerland,CHE,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,4042,,,,14,,11439,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,757,Switzerland,CHE,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,300,,,,2,,3211,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,764,Thailand,THA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,98000985,,,,27069,,21507443,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,764,Thailand,THA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,22231340,,,,6629,,10114114,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,784,United Arab Emirates,ARE,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,2700,,,,16,,23985,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,788,Tunisia,TUN,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,358000,,,,273,,416125,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,792,Turkey,TUR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1000,,,,5,,3621,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,792,Turkey,TUR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1002,,,,6,,9075,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,818,Egypt,EGY,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,1376000,,,,89,,136149,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,826,United Kingdom,GBR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,70019,,,,231,,183549,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,826,United Kingdom,GBR,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,101525,,,,105,,159766,,,4
+H4,2014,2014,2014,6,1,1,Import,392,Japan,JPN,842,USA,USA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,93351883,,,,204511,,162492516,,,4
+H4,2014,2014,2014,6,1,2,Export,392,Japan,JPN,842,USA,USA,,,,,,,,854232,Electronic integrated circuits; memories,5,Number of items,160445878,,,,186071,,283879205,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,0,World,WLD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1116982,,5908469385,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,0,World,WLD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3540756,,28849531905,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,24,Angola,AGO,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1,,100,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,32,Argentina,ARG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,10,,774,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,36,Australia,AUS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,0,,749,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,36,Australia,AUS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,125,,471544,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,40,Austria,AUT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1516,,14960,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,40,Austria,AUT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4263,,36605641,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,56,Belgium,BEL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,13,,18411,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,56,Belgium,BEL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3,,14882,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,76,Brazil,BRA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1440,,2634188,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,76,Brazil,BRA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,49475,,473554525,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,120,Cameroon,CMR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,7,,7672,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,124,Canada,CAN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,74,,676042,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,124,Canada,CAN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,122,,1152433,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,144,Sri Lanka,LKA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1,,548,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,152,Chile,CHL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,11,,12360,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,156,China,CHN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,611946,,3641613654,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,156,China,CHN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1293835,,13816746892,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,203,Czechia,CZE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3,,613,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,203,Czechia,CZE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,7026,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,208,Denmark,DNK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1,,1133,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,208,Denmark,DNK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,13,,33745,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,233,Estonia,EST,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3,,44158,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,246,Finland,FIN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,20007,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,246,Finland,FIN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,269,,1462519,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,251,France,FRA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,262,,1890831,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,251,France,FRA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,410,,2473873,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,276,Germany,DEU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,632,,3219821,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,276,Germany,DEU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,14474,,43384750,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,344,"China, Hong Kong SAR",HKG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,44623,,153137037,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,344,"China, Hong Kong SAR",HKG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1170452,,7440206936,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,348,Hungary,HUN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,37,,23980,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,348,Hungary,HUN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,216,,868501,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,352,Iceland,ISL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,0,,2200,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,360,Indonesia,IDN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1204,,950230,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,360,Indonesia,IDN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,14599,,20379337,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,364,Iran,IRN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4,,583,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,372,Ireland,IRL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,33,,8501,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,376,Israel,ISR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,525,,1340584,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,376,Israel,ISR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,126,,464685,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,381,Italy,ITA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,15,,1325,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,381,Italy,ITA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,14,,31433,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,384,Côte d'Ivoire,CIV,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1,,111,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,392,Japan,JPN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,142834,,949455658,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,392,Japan,JPN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,94851,,574129734,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,404,Kenya,KEN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,1065,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,422,Lebanon,LBN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,12480,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,428,Latvia,LVA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,103,,159908,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,440,Lithuania,LTU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4,,75356,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,458,Malaysia,MYS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3991,,3804114,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,458,Malaysia,MYS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,12904,,73773180,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,470,Malta,MLT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,57,,149292,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,484,Mexico,MEX,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,545,,765131,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,484,Mexico,MEX,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,319,,2811033,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,490,"Other Asia, nes",,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,163896,,655401503,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,490,"Other Asia, nes",,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,465794,,1826976557,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,528,Netherlands,NLD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,19,,93021,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,528,Netherlands,NLD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1815,,8527496,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,554,New Zealand,NZL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,354,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,554,New Zealand,NZL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,0,,66,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,566,Nigeria,NGA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,30,,54450,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,586,Pakistan,PAK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,18,,380,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,608,Philippines,PHL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,17887,,24931168,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,608,Philippines,PHL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,91356,,2364273293,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,612,Pitcairn,PCN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,0,,43,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,616,Poland,POL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,2922,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,616,Poland,POL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1167,,4768230,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,634,Qatar,QAT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,10,,2797,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,642,Romania,ROU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,25,,331132,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,642,Romania,ROU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,134,,1032354,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,643,Russian Federation,RUS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,587,,529459,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,643,Russian Federation,RUS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1,,4456,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,682,Saudi Arabia,SAU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,235,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,688,Serbia,SRB,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,0,,60,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,699,India,IND,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,156,,366588,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,699,India,IND,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,9471,,165028010,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,702,Singapore,SGP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,48218,,235312939,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,702,Singapore,SGP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,130128,,414888484,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,703,Slovakia,SVK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,108,,56368,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,703,Slovakia,SVK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,169,,720039,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,704,Viet Nam,VNM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5400,,23696110,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,704,Viet Nam,VNM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,105104,,1204703806,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,710,South Africa,ZAF,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,616,,5445,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,710,South Africa,ZAF,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,423,,2258804,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,724,Spain,ESP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,8,,13030,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,724,Spain,ESP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1,,3161,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,752,Sweden,SWE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5,,782,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,752,Sweden,SWE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,15,,20914,,,4
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,757,Switzerland,CHE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,2665,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,757,Switzerland,CHE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,10444,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,764,Thailand,THA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,44007,,53715548,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,764,Thailand,THA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,41834,,169157190,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,784,United Arab Emirates,ARE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,36,,20131,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,784,United Arab Emirates,ARE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5,,2379,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,788,Tunisia,TUN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,41196,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,792,Turkey,TUR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,0,,14,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,792,Turkey,TUR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,953,,7753432,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,796,Turks and Caicos Isds,TCA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1,,8613,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,818,Egypt,EGY,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,249,,337915,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,826,United Kingdom,GBR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,118,,379661,,,4
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,826,United Kingdom,GBR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1432,,8597750,,,0
+H4,2014,2014,2014,6,1,1,Import,410,Rep. of Korea,KOR,842,USA,USA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,25850,,153526235,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,842,USA,USA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,34277,,181827028,,,0
+H4,2014,2014,2014,6,1,2,Export,410,Rep. of Korea,KOR,860,Uzbekistan,UZB,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,0,,388,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,0,World,WLD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4716556,,3747501804,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,0,World,WLD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3709246,,5658997489,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,4,Afghanistan,AFG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,388,,592447,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,8,Albania,ALB,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,34,,52455,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,12,Algeria,DZA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,46,,69650,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,24,Angola,AGO,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,11,,17253,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,28,Antigua and Barbuda,ATG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,38,,58016,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,31,Azerbaijan,AZE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,3090,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,32,Argentina,ARG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4,,3000,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,32,Argentina,ARG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5230,,7978924,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,36,Australia,AUS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1469,,1166930,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,36,Australia,AUS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4413,,6732659,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,40,Austria,AUT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,671,,532948,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,40,Austria,AUT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,557,,850172,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,44,Bahamas,BHS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,112,,171523,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,48,Bahrain,BHR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,18,,27249,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,51,Armenia,ARM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,3007,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,52,Barbados,BRB,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,2596,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,56,Belgium,BEL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,34,,26715,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,56,Belgium,BEL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,399,,608093,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,60,Bermuda,BMU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,42,,63513,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,68,Bolivia (Plurinational State of),BOL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1303,,1988606,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,72,Botswana,BWA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,20,,30950,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,76,Brazil,BRA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,750,,595942,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,76,Brazil,BRA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,26709,,40747748,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,84,Belize,BLZ,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,17,,25300,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,92,Br. Virgin Isds,VGB,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,14,,20640,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,100,Bulgaria,BGR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,33,,50715,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,112,Belarus,BLR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,12,,9797,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,112,Belarus,BLR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,15,,23067,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,124,Canada,CAN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2912,,2313889,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,124,Canada,CAN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,63345,,96642538,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,136,Cayman Isds,CYM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,28,,42467,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,144,Sri Lanka,LKA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3,,4155,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,152,Chile,CHL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6880,,10496477,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,156,China,CHN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,509170,,404556803,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,156,China,CHN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,463408,,706995947,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,166,Cocos Isds,CCK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,9,,13660,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,170,Colombia,COL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5462,,8333240,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,188,Costa Rica,CRI,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,317,,251935,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,188,Costa Rica,CRI,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3566,,5440336,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,191,Croatia,HRV,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,11,,16170,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,196,Cyprus,CYP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,27,,41826,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,203,Czechia,CZE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,45,,36014,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,203,Czechia,CZE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2921,,4456326,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,204,Benin,BEN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,3200,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,208,Denmark,DNK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,192,,152860,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,208,Denmark,DNK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,703,,1072899,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,214,Dominican Rep.,DOM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,665,,1014971,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,218,Ecuador,ECU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1314,,2004377,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,222,El Salvador,SLV,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,499,,761822,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,226,Equatorial Guinea,GNQ,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3,,3950,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,231,Ethiopia,ETH,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3,,4657,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,233,Estonia,EST,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,90,,136921,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,242,Fiji,FJI,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,55,,83629,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,246,Finland,FIN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,395,,602750,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,251,France,FRA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6794,,5398177,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,251,France,FRA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,40161,,61271347,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,258,French Polynesia,PYF,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,9,,14204,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,262,Djibouti,DJI,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,3200,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,268,Georgia,GEO,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,3770,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,276,Germany,DEU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,7860,,6244837,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,276,Germany,DEU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,32107,,48983190,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,288,Ghana,GHA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,25,,38706,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,300,Greece,GRC,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,47,,71185,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1856,,2831630,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,324,Guinea,GIN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,11,,16582,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,328,Guyana,GUY,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,32,,49385,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,332,Haiti,HTI,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,34,,51491,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,340,Honduras,HND,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,797,,1215520,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,344,"China, Hong Kong SAR",HKG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,15308,,12163236,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,344,"China, Hong Kong SAR",HKG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,200093,,305270817,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,348,Hungary,HUN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,297,,235957,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,348,Hungary,HUN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3359,,5124261,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,352,Iceland,ISL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,10,,7705,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,352,Iceland,ISL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,223,,340890,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,360,Indonesia,IDN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,3762,,2988874,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,360,Indonesia,IDN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,46,,70713,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,368,Iraq,IRQ,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,11,,16025,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,372,Ireland,IRL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,947,,752265,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,372,Ireland,IRL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4225,,6446039,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,376,Israel,ISR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,10012,,7954912,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,376,Israel,ISR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,11495,,17537966,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,381,Italy,ITA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,17968,,14276580,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,381,Italy,ITA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4047,,6173582,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,384,Côte d'Ivoire,CIV,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,2784,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,388,Jamaica,JAM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4,,3170,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,388,Jamaica,JAM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,547,,833943,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,392,Japan,JPN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,538994,,428253131,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,392,Japan,JPN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,47764,,72870773,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,398,Kazakhstan,KAZ,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,49,,74978,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,400,Jordan,JOR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,17,,25759,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,404,Kenya,KEN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,12,,18179,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,410,Rep. of Korea,KOR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,561229,,445920227,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,410,Rep. of Korea,KOR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,286018,,436362286,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,414,Kuwait,KWT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,77,,117420,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,422,Lebanon,LBN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,8,,12611,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,428,Latvia,LVA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,11,,17120,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,430,Liberia,LBR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4,,6600,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,440,Lithuania,LTU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,387,,590978,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,442,Luxembourg,LUX,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,25,,37584,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,446,"China, Macao SAR",MAC,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2,,2615,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,458,Malaysia,MYS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,48117,,38230941,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,458,Malaysia,MYS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,359091,,547845375,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,462,Maldives,MDV,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,9000,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,470,Malta,MLT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,35,,27800,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,470,Malta,MLT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5,,7600,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,480,Mauritius,MUS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5,,3893,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,484,Mexico,MEX,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2242,,1781627,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,484,Mexico,MEX,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,321171,,489993391,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,490,"Other Asia, nes",,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1911216,,1518541642,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,490,"Other Asia, nes",,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,817588,,1247350256,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,496,Mongolia,MNG,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,12,,18464,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,499,Montenegro,MNE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4,,3022,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,499,Montenegro,MNE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,9183,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,504,Morocco,MAR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,40,,31861,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,504,Morocco,MAR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,10,,15609,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,508,Mozambique,MOZ,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,8781,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,512,Oman,OMN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5,,8200,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,528,Netherlands,NLD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1290,,1024687,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,528,Netherlands,NLD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,13183,,20113301,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,531,Curaçao,CUW,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,64,,97047,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,533,Aruba,ABW,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,71,,107861,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,540,New Caledonia,NCL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6,,8919,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,548,Vanuatu,VUT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,10,,7794,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,554,New Zealand,NZL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,30,,23816,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,554,New Zealand,NZL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,342,,521562,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,558,Nicaragua,NIC,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,74,,113339,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,566,Nigeria,NGA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,69,,105302,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,579,Norway,NOR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,162,,129100,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,579,Norway,NOR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,343,,523597,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,586,Pakistan,PAK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,23,,35501,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,591,Panama,PAN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1328,,2025700,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,600,Paraguay,PRY,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,12337,,18821282,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,604,Peru,PER,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,7,,5859,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,604,Peru,PER,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4922,,7509112,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,608,Philippines,PHL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,134523,,106884280,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,608,Philippines,PHL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,40431,,61683234,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,616,Poland,POL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5,,4253,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,616,Poland,POL,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,806,,1229036,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,620,Portugal,PRT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5,,3941,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,620,Portugal,PRT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,9,,13407,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,634,Qatar,QAT,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,52,,79527,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,642,Romania,ROU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,667,,1018088,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,643,Russian Federation,RUS,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4351,,6638340,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,678,Sao Tome and Principe,STP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,501,,398252,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,682,Saudi Arabia,SAU,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,331,,504860,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,686,Senegal,SEN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,8,,6684,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,688,Serbia,SRB,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,16,,24956,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,699,India,IND,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,604,,479767,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,699,India,IND,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,6021,,9186422,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,702,Singapore,SGP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,785181,,623859396,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,702,Singapore,SGP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,651644,,994178863,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,703,Slovakia,SVK,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,45,,68179,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,704,Viet Nam,VNM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,396,,314473,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,704,Viet Nam,VNM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,13488,,20577433,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,705,Slovenia,SVN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4,,3450,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,705,Slovenia,SVN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,33,,50704,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,710,South Africa,ZAF,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,15,,11919,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,710,South Africa,ZAF,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,256,,390869,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,724,Spain,ESP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,178,,141418,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,724,Spain,ESP,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1091,,1664094,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,740,Suriname,SUR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,75,,113829,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,752,Sweden,SWE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1530,,1215487,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,752,Sweden,SWE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,663,,1011410,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,757,Switzerland,CHE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,406,,322664,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,757,Switzerland,CHE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,848,,1293889,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,764,Thailand,THA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,149067,,118440107,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,764,Thailand,THA,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,199748,,304744825,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,780,Trinidad and Tobago,TTO,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,9,,7052,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,780,Trinidad and Tobago,TTO,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,216,,328991,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,784,United Arab Emirates,ARE,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,970,,1479211,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,788,Tunisia,TUN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,17,,13336,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,788,Tunisia,TUN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,82,,124492,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,792,Turkey,TUR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,144,,114495,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,792,Turkey,TUR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1371,,2090961,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,804,Ukraine,UKR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,5,,3622,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,804,Ukraine,UKR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,4,,6004,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,807,North Macedonia,MKD,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,14,,20702,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,818,Egypt,EGY,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,15,,22451,,,4
+H4,2014,2014,2014,6,1,1,Import,842,USA,USA,826,United Kingdom,GBR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,2038,,1619262,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,826,United Kingdom,GBR,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,29860,,45555978,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,858,Uruguay,URY,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1695,,2586133,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,862,Venezuela,VEN,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,1349,,2058137,,,4
+H4,2014,2014,2014,6,1,2,Export,842,USA,USA,882,Samoa,WSM,,,,,,,,854232,Electronic integrated circuits; memories,1,No Quantity,,,,,138,,209958,,,4
