@@ -11,9 +11,10 @@ par_fixed.mygamma(isnan(par_fixed.mygamma )) = 0;
 par_fixed.mygamma_sum   = squeeze(sum(reshape(par_fixed.mygamma,J_agg,S_aug,S_aug),2)); % 1-labor share = gamma_sum
 
 
-PR_import = [51103157 ; 328294898]; % from world; from japan
-HF_import = [63519010 ; 9375581]; % from world; from japan
-input_import_share_japan = [PR_import(2); HF_import(2)]./[sum(PR_import); sum(HF_import)];
+% PR_import = [51103157 ; 328294898]; % from world; from japan
+% HF_import = [63519010 ; 9375581]; % from world; from japan
+% input_import_share_japan = [PR_import(2); HF_import(2)]./[sum(PR_import); sum(HF_import)];
+input_import_share_japan = [0.8492; 0.07];
 tau             = ones(4,4,5);
 % tau(2,3,4)  = 1.00698;
 tau(2,3,4)  = 1.262;
@@ -28,7 +29,8 @@ display([input_import_share_japan input_share_japan_sol])
 % share of calibrated model  % share of calibrated model
 real_wage_hat = solution.w./prod(solution.P.^par_fixed.alpha,2);
 solution_Leontief = solution;
-display(solution_Leontief.w./prod(solution_Leontief.P.^par_fixed.alpha,2)-1)
+disp('Real wage change in %')
+display((solution_Leontief.w./prod(solution_Leontief.P.^par_fixed.alpha,2)-1)*100)
 %% Exercise 2. Compare it with uniform tariff increase
 calibration_CP_v3
 

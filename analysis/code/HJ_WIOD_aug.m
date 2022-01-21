@@ -115,6 +115,20 @@ par_fixed.S         = size(Z_aug,3);
 par_fixed.J         = size(Z_aug,1);
 data.D = sum(X_ttl,2)-sum(lastidx(data.X_ttl,S_aug,J_agg,J_agg).*par_fixed.mypi,[2 3]);
 
+% Compute market shares: Take the HF and PR market share of firms
+% Firms are ONLY Japanese firms and their local factories 
+% From 2014 TOK corp's financial statements, take the PR market share
+% across firms
+S_prev =[25 ;18.5; 13.1; 13; 9.7; 6.5; 14.2]/100;
+S_prev = [S_prev;S_prev.*0.15];
+S_prev = S_prev/sum(S_prev);
+data.S_prev(:,1) = S_prev;
+S_prev =ones(length(S_prev(:,1))/2,1)/length(S_prev(:,1));
+S_prev = [S_prev;S_prev.*0.1];
+S_prev = S_prev/sum(S_prev);
+% No market share data for HF: use uniform distribution instead.
+data.S_prev(:,2) = S_prev ;
+
 % functions that control index matching
 
 function z = mididx(x,idx1,idx2,idx3)

@@ -33,18 +33,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % par0 = [par.T; par.tau; par.sigma];
 
-options     = optimoptions('fsolve','Display','off');
+options     = optimoptions('fsolve','Display','iter');
 J= par_fixed.J;
 S= par_fixed.S;
 
-w_0 = sort(randn(J,1),'descend');
+w_0 = zeros(J,1);
 w_sol   = fsolve(@(w) mktclearing(w,tau,par_fixed,data), w_0, options);
     % Solve for equilibrium wage, using trade balance condition
 solution.w = exp(w_sol(:,1))./exp(w_sol(1,1)); % Save the result in structure 'solution'
 % Given the solution, obtain (c, P, pi, X) using while loop.
-cP_prev     = [randn(S*J,1); randn(S*J,1)]; % This vector is converted to exp(cP_prev) in function g.
+cP_prev     = ones(2*S*J,1); % This vector is converted to exp(cP_prev) in function g.
 gap         = 1;
-tol         = 1e-8; 
+tol         = 1e-4; 
 while gap>tol
     cP_new      = log(cPeq(solution.w(:,1),cP_prev,tau,par_fixed)); % cPeq(w,cP,tau,par_fixed)
     gap         = norm(exp(cP_prev)-exp(cP_new));
@@ -56,7 +56,7 @@ solution.pi = reshape(pieq(cP_prev,tau,par_fixed).*par_fixed.mypi(:),J,J,S); %pi
 % Finally, using market clearing conditions compute expenditure X.
 gap         = 1;
 X_prev      = exp(randn(S*J,1));
-while gap > 1e-8
+while gap > tol
     Y_prev  = squeeze(sum(lastidx(X_prev,S,J,J).*solution.pi,2));
     X_new   = Xeq(solution.w,solution.P,Y_prev,par_fixed,data);  % Xeq(w,P,Y_prev,par_fixed,data)
     gap     = norm(X_prev-X_new);
@@ -96,6 +96,9 @@ function z = cPeq(w,cP,tau,par_fixed)
     THETA       = mypi(:).*((c_temp(:).*reshape(tau,S*J^2,1)).^(-kron(theta,ones(J^2,1))));  % numerators of pi.
     THETA_sum   = sum(reshape(THETA,J,S*J),1)';        
     z(:,S+1:end) = reshape((THETA_sum).^(-1./theta_rep),J,S); % get P
+%     z(:,end-1) = HJ_AtkesonBursteinHat_v2(w,S_prev(:,end-1),tau(:,:,end-1));
+%     disp('computed PR part')
+%     z(:,end) = HJ_AtkesonBursteinHat_v2(w,S_prev(:,end),tau(:,:,end));
     z       = reshape(z,2*J*S,1);
 end
 
@@ -141,14 +144,14 @@ function z = mktclearing(w,tau,par_fixed,data)
 % X: SxJ vector
     S = par_fixed.S;
     J = par_fixed.J;
-    
+%     S_prev=  data.S_prev;
     D = data.D;
     w       = exp(w(1:J));
     w       = w/w(1);       % Normalize the wage vector
     X       = data.X_ttl(:);
     cP_prev = randn(2*S*J,1); % LOG of cost and price: this can be negative!
     gap     = 1;
-    tol     = 1e-8;
+    tol     = 1e-4;
     while gap>tol
         cP_new  = log(cPeq(w,cP_prev,tau,par_fixed));
         gap     = norm(exp(cP_prev)-exp(cP_new));
@@ -158,7 +161,7 @@ function z = mktclearing(w,tau,par_fixed,data)
     gap         = 1;
     X_prev=X;
     P_prev = cP_prev(S*J+1:end);
-     while gap > 1e-8
+     while gap > tol
         Y_prev  = sum(lastidx(X_prev,S,J,J).*pi_temp,2);
         X_new   = Xeq(w,P_prev,Y_prev,par_fixed,data);
         gap     = norm(X_prev-X_new);
