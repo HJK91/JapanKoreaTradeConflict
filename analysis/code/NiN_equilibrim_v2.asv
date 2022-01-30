@@ -1,0 +1,53 @@
+function qumd_vec = NiN_equilibrium_v2(pd,qd_vec,zd_H,zu_H,par)
+    eta = par.eta;
+    w= par.w;
+    alpha = par.alpha;
+    sigma = par.sigma ;
+    sd_vec = qd_vec./sum(qd_vec);
+    cd = pd *((sigma-sd_vec)/sigma);
+    constant = (((1-alpha)/alpha)^alpha+(alpha/(1-alpha))^(1-alpha));
+    p_input = (cd/(w^(1-alpha)*constant.*qd_vec./zd_H)).^(1/alpha);
+    qum_sol = zeros(nu,nm,nd);
+for d   = 1:nd
+        % qd_sol as a function of qum_before
+    qd_sol_temp = zeros(nu,nm);
+    for u   = 1: nu
+        % qu_sol as a function of qd_before
+        for m   = 1:nm
+            qum_sol(u,m,d) = fsolve(@(qd) tempfun_qum(zd_H,zu_H,qum_before,qd_vec,par,u,m,d),qd0,options);
+        end
+    end
+
+end
+end
+
+function val = tempfun_qum(qd,zd_H,zu_H,qumd_before,qd_before,par,u,m,d)
+    % Given qum, find the bargaining outcome of qdm.
+    q_d_temp = qd_before;
+    q_d_temp(d) = [];    
+    
+    q_m_temp = qumd_before(:,:,d);
+    q_m_temp(:,m) = [];
+    q_m_temp = Q_agg(q_m_temp,par.eta);
+    
+    q_um_temp = qumd_before(:,m,d);
+    q_um_temp(u) = [];
+    
+    zd_bargain = zd_H(d);
+    zu_bargain = zu_H(u,m);
+    [~,qd_sol] = NiN_bargaining(zd_bargain,zu_bargain,q_um_temp,q_m_temp,q_d_temp,par);
+    val = qd-qd_sol;
+    
+end
+
+function P = P_indx(p,eta)
+    % p is the vector of prices
+    % eta is the elasticity of substitution
+    P = sum(p.^(1-eta))^(1/(1-eta));
+end
+
+function Q = Q_agg(q,eta)
+    % p is the vector of prices
+    % eta is the elasticity of substitution
+    Q = sum(q.^(eta/(eta-1))).^(eta/(eta-1));
+end
